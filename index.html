@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="password checker" content="using DOM manipulation" />
+  <title>How good is your password?</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div class="loginContainer">
+    <h1 class="centerText">How good is your password?</h1>
+    <form action="#" class="passwordForm">
+      <input type="password" class="passwordInput" name="psw" placeholder="Enter password here..."
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+      <div class="passwordQualityContainer">
+        <div class="feedbackBarContainer">
+          <div class="feedbackBar"></div>
+        </div>
+        <div class="feedbackText"></div>
+      </div>
+      <button class="submitButton">Submit</button>
+    </form>
+  </div>
+</body>
+
+<script type="text/javascript" src="passwordCheck.js"></script>
+
+</html>
